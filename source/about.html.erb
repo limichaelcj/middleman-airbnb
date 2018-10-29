@@ -4,7 +4,7 @@ title: Le Wagon - Middleman - About
 
 <div id="about">
   <div class="about-content">
-    <h1>This template was built with <i class="fas fa-heart"></i> by</h1>
+    <h1>Meet the team!</h1>
     <ul class="list-inline">
       <% data.users.each do |user| %>
         <li>
@@ -20,5 +20,6 @@ title: Le Wagon - Middleman - About
         </li>
       <% end %>
     </ul>
+    <%= link_to "Back to home", "/index.html", class: "btn btn-primary" %>
   </div>
 </div>

@@ -1,5 +1,5 @@
 #about {
-  height: 100vh;
+  height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,7 +22,7 @@
     color: rgba(0,0,0,0.6);
   }
   a {
-    color: rgba(0,0,0,0.25);
+    color: white;
     font-weight: bold;
     letter-spacing: -0.5px;
     font-size: 15px;

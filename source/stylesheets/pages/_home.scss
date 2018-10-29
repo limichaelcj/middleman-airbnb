@@ -1,17 +1,21 @@
 #home {
-  background-color: #D23333;
+  background-color: #f0f0f0;
   color: white;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
   text-align: center;
   p {
     margin-top: 1.5em;
   }
   a {
-    color: rgba(0,0,0,0.4);
+    color: white;
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+#home > * {
+  margin-bottom: 80px;
 }

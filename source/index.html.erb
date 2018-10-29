@@ -1,15 +1,18 @@
 ---
 title: Le Wagon - Middleman
 ---
-
 <div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+    <!-- banner -->
+    <%= partial("layouts/banner", :locals => {city: 'berlin' }) %>
+    <!-- card grid -->
+    <div class="container" style="padding:80px;">
+        <div class="row">
+            <% %w(shanghai, lisbon, copenhagen).each do |city| %>
+            <div class="col-xs-12 col-sm-4">
+                <%= partial("layouts/card", :locals => {city: city }) %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+    <%= link_to "Meet the team", "/about.html", class: "btn btn-primary" %>
 </div>
